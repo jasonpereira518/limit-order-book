@@ -1,0 +1,6 @@
+(library
+ (name orderbook)
+ (public_name orderbook)
+ (libraries core)
+ (preprocess
+  (pps ppx_jane)))

@@ -1,0 +1,6 @@
+(executable
+ (name main)
+ (public_name orderbook)
+ (libraries orderbook core core_unix core_unix.command_unix)
+ (preprocess
+  (pps ppx_jane)))
