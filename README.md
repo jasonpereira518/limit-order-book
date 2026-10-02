@@ -109,13 +109,3 @@ lib/bench.ml       replay + latency percentiles
 bin/main.ml        CLI
 test/              unit, expect, Quickcheck, shrink demo
 ```
-
-## Resume bullet options
-
-Pick one and edit to taste:
-
-1. **Built a price-time-priority limit order book and matching engine in OCaml (Core/ppx_jane) supporting limit, market, IOC, FOK, and post-only orders; enforced no-cross and quantity-conservation invariants with Quickcheck over randomized event streams, and measured ~1.6M events/sec with ~2 µs p99 latency on a Map-based book.**
-
-2. **Implemented FIFO matching with persistent `Map` price levels and property-based tests that shrink failures to minimal counterexamples; added expect-test blotter snapshots and a synthetic market simulator with `Time_ns` throughput/latency harness for reproducible performance reporting.**
-
-3. **Designed an OCaml matching engine with explicit Fill vs public Trade models and dual modify semantics (in-place downsize vs cancel-reinsert); validated price-time priority under adversarial random order flow and documented Map/Fqueue bottlenecks against measured p95/p99.**
